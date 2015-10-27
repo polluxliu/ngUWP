@@ -1,0 +1,7 @@
+﻿<div>
+    <div class="panel panel-default panel_repeat" ng-repeat="item in source" my-waterfall-item>
+        <img ng-src="{{item.images.large}}" class="img-responsive" />
+        <div class="panel-body"><h3><a href="#" ui-sref="item({id:item.id})">{{item.title}}</a></h3></div>
+        <div class="panel-footer" ng-show="item.author_intro != ''">{{item.author_intro}}</div>
+    </div>
+</div>
